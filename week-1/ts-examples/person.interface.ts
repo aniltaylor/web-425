@@ -1,7 +1,7 @@
 /* Title: person.interface.ts
 Author: Professor Krasso
-Modified By: April Yang
-Date: 10/18/2022
+Modified By: Anita Taylor
+Date: 10/21/2022
 Description: Typescript interface for person.class.ts
  */
 
