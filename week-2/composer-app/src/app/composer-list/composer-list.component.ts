@@ -21,26 +21,23 @@ export default class Composer {
 
 }
 
-
-
-
 @Component({
   selector: 'app-composer-list',
   templateUrl: './composer-list.component.html',
   styleUrls: ['./composer-list.component.css']
 })
 export class ComposerListComponent implements OnInit {
-  // a data type of an Array<Composer> ?
+
   composers: Array<Composer>
 
   // composers array
   constructor() {
     this.composers = [
-      new Composer("Fernando Sor", "Contemporary Classical "),
+      new Composer("Wolfgang Amadeus Mozart", "Classical"),
       new Composer("Johann Sebastian Bach", "Classical"),
       new Composer("Frederic Chopin", "Classical"),
       new Composer("Joseph Haydn", "Classical"),
-      new Composer("Wolfgang Amadeus Mozart", "Classical"),
+      new Composer("Ludwig van Beethoven", "Classical"),
 
     ]
   }
