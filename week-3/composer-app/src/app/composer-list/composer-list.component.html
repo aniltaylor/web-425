@@ -1,0 +1,32 @@
+<!--
+ Title: composer-list.component.html
+ Author: Professor Krasso
+ Modified By: Anita Taylor
+ Date: 10/26/2022
+ Description: Exercise 2.4 – Routing in Action - composer-list.component.html
+-->
+
+<div class="row">
+  <div class="col-sm-12">
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col"
+          style="list-style-type: none; background-color: black; color: white; width: 50%">
+          Full name
+          </th>
+          <th scope="col"
+          style="list-style-type: none; background-color: black; color: white; width: 50%">
+            Genre
+          </th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let composer of composers">
+        <tr>
+          <td scope="row">{{composer.fullName}}</td>
+          <td scope="row">{{composer.genre}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

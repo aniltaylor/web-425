@@ -28,7 +28,7 @@
   <h2>Exercise 3.3 - Passing Data to Routes, Part 2</h2>
   <br /><br />
   <!-- if the isLoggedIn variable is true -->
-  <div class="row" *ngIf="isLoggedIn; else showError">
+  <div class="row" *ngIf="isLoggedIn; else showError" >
     <div class="col-sm-4">
       <!-- Left column declaration -->
       <app-my-image></app-my-image>
@@ -42,8 +42,8 @@
   <ng-template #showError>
     <div class="row">
       <div class="col-sm-12">
-        <h4 class="alert alert-danger">
-          You are not authorized to view this content
+        <h4 class="alert-error">
+          You are not authorized to view this content.
         </h4>
       </div>
     </div>
