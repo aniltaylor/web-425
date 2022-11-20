@@ -11,24 +11,20 @@
     <table class="table table-bordered">
       <thead class="thead-dark">
         <tr>
-          <th
-            scope="col"
-            style="background-color: black; color: white; width: 50%"
-          >
-            Full name
+          <th scope="col"
+          style="list-style-type: none; background-color: black; color: white; width: 50%">
+          Full name
           </th>
-          <th
-            scope="col"
-            style="background-color: black; color: white; width: 50%"
-          >
+          <th scope="col"
+          style="list-style-type: none; background-color: black; color: white; width: 50%">
             Genre
           </th>
         </tr>
       </thead>
       <tbody *ngFor="let composer of composers">
         <tr>
-          <td scope="row">{{ composer.fullName }}</td>
-          <td scope="row">{{ composer.genre }}</td>
+          <td scope="row">{{composer.fullName}}</td>
+          <td scope="row">{{composer.genre}}</td>
         </tr>
       </tbody>
     </table>

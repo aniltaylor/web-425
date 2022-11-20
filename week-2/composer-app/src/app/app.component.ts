@@ -1,6 +1,3 @@
-
-
-
 import { Component } from '@angular/core';
 
 @Component({
@@ -9,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  assignment: string = 'Assignment 1.5 - Components';
+  assignment = 'Assignment 2.4 - Routing in Action';
 }

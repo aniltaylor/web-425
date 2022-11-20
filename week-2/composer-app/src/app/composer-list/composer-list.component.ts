@@ -7,42 +7,42 @@
  */
 
 
-import { Component, OnInit } from '@angular/core';
+ import { Component, OnInit } from '@angular/core';
 
-/* Composer Class */
-export default class Composer {
-  fullName: string;
-  genre: string;
+ /* Composer Class */
+ export default class Composer {
+   fullName: string;
+   genre: string;
 
-  constructor(fullName: string, genre: string) {
-    this.fullName = fullName;
-    this.genre = genre;
-  }
+   constructor(fullName: string, genre: string) {
+     this.fullName = fullName;
+     this.genre = genre;
+   }
 
-}
+ }
 
-@Component({
-  selector: 'app-composer-list',
-  templateUrl: './composer-list.component.html',
-  styleUrls: ['./composer-list.component.css']
-})
-export class ComposerListComponent implements OnInit {
+ @Component({
+   selector: 'app-composer-list',
+   templateUrl: './composer-list.component.html',
+   styleUrls: ['./composer-list.component.css']
+ })
+ export class ComposerListComponent implements OnInit {
+   // a data type of an Array<Composer> ?
+   composers: Array<Composer>
 
-  composers: Array<Composer>
+   // composers array
+   constructor() {
+     this.composers = [
+       new Composer("Fernando Sor", "Contemporary Classical "),
+       new Composer("Johann Sebastian Bach", "Classical"),
+       new Composer("Frederic Chopin", "Classical"),
+       new Composer("Joseph Haydn", "Classical"),
+       new Composer("Wolfgang Amadeus Mozart", "Classical"),
 
-  // composers array
-  constructor() {
-    this.composers = [
-      new Composer("Wolfgang Amadeus Mozart", "Classical"),
-      new Composer("Johann Sebastian Bach", "Classical"),
-      new Composer("Frederic Chopin", "Classical"),
-      new Composer("Joseph Haydn", "Classical"),
-      new Composer("Ludwig van Beethoven", "Classical"),
+     ]
+   }
 
-    ]
-  }
+   ngOnInit(): void {
+   }
 
-  ngOnInit(): void {
-  }
-
-}
+ }
