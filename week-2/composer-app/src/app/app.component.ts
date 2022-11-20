@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  assignment = 'Assignment 2.4 - Routing in Action';
+  assignment = 'Composer App';
 }
