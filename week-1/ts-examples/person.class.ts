@@ -23,5 +23,5 @@ class Person implements IPerson {
 
 
 // initiates new person object
-let myName = new Person("April", "Yang");
+let myName = new Person("Anita", "Taylor");
 console.log(`My name is ${myName.firstName} ${myName.lastName}`)
